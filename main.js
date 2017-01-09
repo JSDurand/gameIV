@@ -48,7 +48,7 @@ var app = new p2.WebGLRenderer(function(){
     length: .3,
     radius: .05,
     material: ball_mat
-  }), [0, 0], Math.PI*5/8);
+  }), [0, 0]);
   mon_jeu.monde.addBody(left_arm_body);
 
   var right_arm_body = new p2.Body({position: [.1, .5], mass: .5});
@@ -56,7 +56,7 @@ var app = new p2.WebGLRenderer(function(){
     length: .3,
     radius: .05,
     material: ball_mat
-  }), [0, 0], Math.PI*7/8);
+  }), [0, 0]);
   mon_jeu.monde.addBody(right_arm_body);
 
   var tete_body_constraint = new p2.RevoluteConstraint(tete_body, body_body,
