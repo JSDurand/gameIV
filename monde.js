@@ -1,3 +1,9 @@
+function initialise(that) {
+  mon_jeu.monde = new p2.World({
+    gravity : [0,-10]
+  });
+  that.setWorld(mon_jeu.monde);
+}
 // Create the world
 var monde = new p2.World({
   gravity : [0,-10]
